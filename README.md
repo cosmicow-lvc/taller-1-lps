@@ -68,10 +68,11 @@ El programa define y utiliza dos excepciones personalizadas.
 -Mensaje = `"Error: Se detectó una entrada que no es un número."` 
 
 # Flujo de manejo de excepciones
-
+```
 calculadora()
     sumar-positivos(a, b)
         ¿a o b no es número?  =  raise exn:fail:tipo-invalido
         ¿a o b es negativo?   =  raise exn:fail:numero-negativo
         caso normal           =  retorna (+ a b)
     with-handlers captura la excepción y muestra el mensaje de error
+```
